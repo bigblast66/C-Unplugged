@@ -1,20 +1,34 @@
 # C Unplugged
 
 ## Overview
-C Unplugged is a set of activities that explain basic computer science concepts without using a computer. It focuses on ideas like algorithms, logic, and problem solving through simple offline tasks.
+C Unplugged is a command-line based music management system written in C. It allows users to manage songs, albums, and playlists through a structured program.
 
-## Why this project
-I worked on this to understand how core computer science concepts can be explained in a simpler and more intuitive way. It helped me think beyond coding and focus on how people actually understand these ideas.
+It is similar to a simplified backend of a music application like Spotify, where the focus is on handling data such as songs and playlists rather than building a user interface.
 
 ## Features
-- Explains concepts without requiring a computer
-- Focus on algorithms and logical thinking
-- Simple and easy to understand activities
+- Manage songs, albums, and playlists
+- Store and organize music data using files
+- Modular design using multiple C files and headers
+- Command-line based interaction
+
+## Project Structure
+- `main.c` – Entry point of the program
+- `songs.c / songs.h` – Handles song-related operations
+- `album.c / album.h` – Manages albums
+- `playlist.c / playlist.h` – Handles playlist logic
+- `instructions.c / instructions.h` – User interaction and instructions
+- `music.txt` – Stores song data
+- `makefile` – For compiling the project
+
+## Why I built this
+I built this project to understand how data can be organized and managed in C using structures and files. It helped me learn how larger programs are split into multiple modules and how they interact.
 
 ## Limitations
-Since this project avoids using digital tools, it is less interactive compared to software-based approaches.
+- No graphical interface (CLI only)
+- Limited user interaction compared to real applications
+- Basic data handling
 
 ## Future Improvements
-- Better structure for activities
-- Clearer instructions for beginners
-- More variety in examples
+- Add a graphical interface
+- Improve user interaction
+- Add features like search and sorting
